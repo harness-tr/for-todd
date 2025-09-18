@@ -1,0 +1,28 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: for-todd
+  description: output link works?
+  links:
+    - url: https://dev.azure.com/TR-Harness/Harness-POV/_workitems/recentlycreated/
+      title: Azure DevOps Boards
+      icon: microsoft-azure  
+  additionalInfo:
+    open_ado_items: ""
+ # tags:
+ #   - replace-this
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: harness-tr/for-todd
+    snyk.io/org-id: b4c68fa5-d1b2-451f-a162-ea2ed840727f
+    snyk.io/target-id: harness-tr/for-todd
+    wiz.io/project-id: harness-tr/for-todd
+    sonarqube.org/project-key: harness-tr_for-todd
+    backstage.io/kubernetes-label-selector: 'app=for-todd'
+spec:
+  type: service
+  owner: alejandro.soto@harness.io
+  lifecycle: experimental
+#  dependsOn:
+#    - component:default/replace-this
+#  system: poc-system

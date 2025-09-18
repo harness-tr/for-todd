@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: for-todd
+  labels:
+    app: for-todd
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: for-todd
+  template:
+    metadata:
+      labels:
+        app: for-todd
+    spec:
+      containers:
+        - name: for-todd
+          image: docker.io/parsontodd/for-todd:latest
+          ports:
+            - containerPort: 8080
